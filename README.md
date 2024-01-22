@@ -7,7 +7,11 @@ Welcome to TechnoLuc's Windows Toolkit, a collection of PowerShell scripts for v
 To get started, run the following command in PowerShell:
 
 ```powershell
-irm https://github.com/technoluc/get/raw/main/script.ps1 | iex
+irm https://github.com/technoluc/get/raw/main/get.ps1 | iex
+```
+
+```powershell
+irm get.technoluc.nl | iex
 ```
 
 This will download and execute the main script, opening a looping menu with different options.
@@ -47,7 +51,7 @@ irm https://github.com/technoluc/recycle-bin-themes/main/RecycleBinThemesGUI.ps1
 - Activate Microsoft Office / Windows.
 
 ```powershell
-irm https://github.com/technoluc/get/main/script.ps1 | iex
+irm https://github.com/technoluc/officeutil/main/OfficeUtil.ps1 | iex
 ```
 
 ## Office Removal Tools
