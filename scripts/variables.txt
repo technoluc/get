@@ -4,8 +4,10 @@
 #                                          SET VARIABLES                                           #
 ####################################################################################################
 
-$ScriptUrl = "https://raw.githubusercontent.com/technoluc/get/main/script.ps1"
+$ScriptUrl = "https://raw.githubusercontent.com/technoluc/get/main/get.ps1"
 $WinUtilUrl = "https://raw.githubusercontent.com/technoluc/winutil/main/winutil.ps1"
+$OGWinUtilUrl = "https://raw.githubusercontent.com/ChrisTitusTech/winutil/main/winutil.ps1"
+$OfficeUtilUrl = "https://raw.githubusercontent.com/technoluc/officeutil/main/OfficeUtil.ps1"
 $BinUtilUrl = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/RecycleBinThemes.ps1"
 $BinUtilGUIUrl = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/RecycleBinThemesGUI.ps1"
 

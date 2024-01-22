@@ -1,5 +1,5 @@
 $OFS = "`r`n"
-$scriptname = "script.ps1"
+$scriptname = "get.ps1"
 
 if (Test-Path -Path "$($scriptname)")
 {
