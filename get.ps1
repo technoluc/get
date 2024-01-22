@@ -17,6 +17,7 @@ $OGWinUtilUrl = "https://raw.githubusercontent.com/ChrisTitusTech/winutil/main/w
 $OfficeUtilUrl = "https://raw.githubusercontent.com/technoluc/officeutil/main/OfficeUtil.ps1"
 $BinUtilUrl = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/RecycleBinThemes.ps1"
 $BinUtilGUIUrl = "https://raw.githubusercontent.com/technoluc/recycle-bin-themes/main/RecycleBinThemesGUI.ps1"
+$MASUrl = "https://massgrave.dev/get"
 
 $OfficeUtilPath = "C:\OfficeUtil"
 $odtPath = "C:\Program Files\OfficeDeploymentTool"
