@@ -35,5 +35,15 @@ function Invoke-OfficeScrubber {
 function Invoke-MAS {
     # Start-Process -Verb runas -FilePath powershell.exe -ArgumentList "Invoke-WebRequest -useb https://massgrave.dev/get | Invoke-Expression" -Wait
     Invoke-RestMethod https://massgrave.dev/get | Invoke-Expression
-  }
-  
+}
+
+function Test-OfficeInstalled {
+    $officeInstallationPath = "C:\Program Files\Microsoft Office"
+    if (Test-Path $officeInstallationPath) {
+        Write-Host "Microsoft Office is already installed." -ForegroundColor Yellow
+        Write-Host "Run OfficeRemoverTool and OfficeScrubber to remove the previous installation first."
+        Write-Host "Or run Massgrave.dev Microsoft Activation Scripts to activate Office / Windows."
+        return $true
+    }
+    return $false
+}

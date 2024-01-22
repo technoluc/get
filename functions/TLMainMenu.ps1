@@ -8,7 +8,7 @@ function Show-TLMainMenu {
     Write-Host "4. OfficeUtil: Install/Remove/Activate Office & Windows" -ForegroundColor Cyan
     Write-Host "Q. Exit" -ForegroundColor Red
     Write-Host ""
-    # $choice = Read-Host "Select an option (0-3)"
+    # $choice = Read-Host "Select an option (0-4)"
     Write-Host -NoNewline "Select option: "
     $choice = [System.Console]::ReadKey().KeyChar
     Write-Host ""
@@ -32,7 +32,7 @@ function Process-TLMainMenu-Choice {
             Show-TLMainMenu
         }
         '2' {
-            # Check if script was run as Administrator, relaunch if not
+            # Check if script was run as Administrator, relaunch if so
             if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
                 Clear-Host
                 Start-Process -FilePath powershell.exe -ArgumentList "Invoke-RestMethod `"$BinUtilUrl`" | Invoke-Expression" -Wait -NoNewWindow
@@ -48,7 +48,7 @@ function Process-TLMainMenu-Choice {
 
         }
         '3' {
-            # Check if script was run as Administrator, relaunch if not
+            # Check if script was run as Administrator, relaunch if so
             if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
                 Clear-Host
                 Start-Process -FilePath powershell.exe -ArgumentList "Invoke-RestMethod `"$BinUtilGUIUrl`" | Invoke-Expression" -NoNewWindow
