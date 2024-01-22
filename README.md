@@ -1,7 +1,3 @@
-Certainly! Below is a GitHub readme for TechnoLuc's repository based on the provided PowerShell script:
-
----
-
 # TechnoLuc's Windows Toolkit
 
 Welcome to TechnoLuc's Windows Toolkit, a collection of PowerShell scripts for various Windows utilities. This toolkit provides a range of functionalities, including tweaking Windows settings, managing recycle bin themes, activating Microsoft Office and Windows, and more.
