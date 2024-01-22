@@ -1,8 +1,8 @@
-# TechnoLuc's Windows Toolkit
+# TechnoLuc's Toolkits
 
-Welcome to TechnoLuc's Windows Toolkit, a collection of PowerShell scripts for various Windows utilities. This toolkit provides a range of functionalities, including tweaking Windows settings, managing recycle bin themes, activating Microsoft Office and Windows, and more.
+Welcome to TechnoLuc's Toolkits, a collection of PowerShell scripts for various Windows utilities. This toolkit provides a range of functionalities, including tweaking Windows settings, managing recycle bin themes, activating Microsoft Office and Windows, and more.
 
-## Quick Start
+## Quick Start Windows
 
 To get started, run the following command in PowerShell:
 
@@ -11,7 +11,11 @@ irm https://github.com/technoluc/get/raw/main/get.ps1 | iex
 ```
 
 ```powershell
-irm get.technoluc.nl | iex
+irm get.technoluc.nl/win | iex
+```
+
+```powershell
+irm win.technoluc.nl | iex
 ```
 
 This will download and execute the main script, opening a looping menu with different options.
