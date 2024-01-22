@@ -168,7 +168,7 @@ function Install-Office {
       Download-File -url $downloadURL -outputPath $configXMLPath
   }
 
-  Write-Host -NoNewline "Install Microsoft $product? ( Y / N ): "
+  Write-Host -NoNewline "Install Microsoft '$product'? ( Y / N ): "
   $choice = [System.Console]::ReadKey().KeyChar
   Write-Host ""
 
