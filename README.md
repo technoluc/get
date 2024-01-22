@@ -1,4 +1,4 @@
-# TechnoLuc's Toolkits
+# TechnoLuc's Terminal Toolkits
 
 Welcome to TechnoLuc's Toolkits, a collection of PowerShell scripts for various Windows utilities. This toolkit provides a range of functionalities, including tweaking Windows settings, managing recycle bin themes, activating Microsoft Office and Windows, and more.
 
