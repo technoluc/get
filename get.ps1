@@ -575,7 +575,6 @@ function Process-TLMainMenu-Choice {
         }
     }
 }
-w
 # Show Main Menu
 Show-TLMainMenu
 
