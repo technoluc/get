@@ -6,6 +6,7 @@ function Show-TLMainMenu {
     Write-Host "2. BinUtil: Recycle Bin Themes" -ForegroundColor Magenta
     Write-Host "3. BinUtil GUI: Recycle Bin Themes" -ForegroundColor Magenta
     Write-Host "4. OfficeUtil: Install/Remove/Activate Office & Windows" -ForegroundColor Cyan
+    Write-Host "5. AdvancedSystemTroubleshoot: Run CHKDSK/SFC/DISM commands" -ForegroundColor Cyan
     Write-Host "Q. Exit" -ForegroundColor Red
     Write-Host ""
     # $choice = Read-Host "Select an option (0-4)"
@@ -68,6 +69,15 @@ function Process-TLMainMenu-Choice {
             if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
                 Write-Output "OfficeUtil needs to be run as Administrator. Attempting to relaunch."
                 Start-Process -Verb runas -FilePath powershell.exe -ArgumentList "Invoke-RestMethod `"$ScriptUrl`" | Invoke-Expression" 
+                break
+            }
+            Show-OfficeMainMenu
+        }
+        '5' {
+            # Check if script was run as Administrator, relaunch if not
+            if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+                Write-Output "AdvancedSystemTroubleshoot.ps1 needs to be run as Administrator. Attempting to relaunch."
+                Start-Process -Verb runas -FilePath powershell.exe -ArgumentList "Invoke-RestMethod `"https://raw.githubusercontent.com/technoluc/scripts/main/win/AdvancedSystemTroubleshoot.ps1`" | Invoke-Expression" 
                 break
             }
             Show-OfficeMainMenu
