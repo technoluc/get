@@ -501,7 +501,7 @@ function Show-TLMainMenu {
     Write-Host "2. BinUtil: Recycle Bin Themes" -ForegroundColor Magenta
     Write-Host "3. BinUtil GUI: Recycle Bin Themes" -ForegroundColor Magenta
     Write-Host "4. OfficeUtil: Install/Remove/Activate Office & Windows" -ForegroundColor Cyan
-    Write-Host "5. AdvancedSystemTroubleshoot: Run CHKDSK/SFC/DISM commands" -ForegroundColor Cyan
+    Write-Host "5. AdvancedSystemTroubleshoot: Run CHKDSK/SFC/DISM commands" -ForegroundColor Red
     Write-Host "Q. Exit" -ForegroundColor Red
     Write-Host ""
     # $choice = Read-Host "Select an option (0-4)"
