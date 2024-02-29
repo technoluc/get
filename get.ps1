@@ -572,10 +572,10 @@ function Process-TLMainMenu-Choice {
             # Check if script was run as Administrator, relaunch if not
             if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
                 Write-Output "AdvancedSystemTroubleshoot.ps1 needs to be run as Administrator. Attempting to relaunch."
-                Start-Process -Verb runas -FilePath powershell.exe -ArgumentList "Invoke-RestMethod `"https://raw.githubusercontent.com/technoluc/scripts/main/win/AdvancedSystemTroubleshoot.ps1`" | Invoke-Expression" 
+                Start-Process -Verb runas -FilePath powershell.exe -ArgumentList "Invoke-RestMethod `"$ScriptUrl`" | Invoke-Expression" 
                 break
             }
-            Show-OfficeMainMenu
+            Start-Process -FilePath powershell.exe -ArgumentList "Invoke-RestMethod `"https://raw.githubusercontent.com/technoluc/scripts/main/win/AdvancedSystemTroubleshoot.ps1`" | Invoke-Expression" -NoNewWindow
         }
         default {
             # Read-Host "Press Enter to continue..."
