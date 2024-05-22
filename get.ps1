@@ -465,7 +465,7 @@ function Invoke-OfficeScrubber {
 
 function Invoke-MAS {
     # Start-Process -Verb runas -FilePath powershell.exe -ArgumentList "Invoke-WebRequest -useb https://massgrave.dev/get | Invoke-Expression" -Wait
-    Invoke-RestMethod https://massgrave.dev/get | Invoke-Expression
+    Invoke-RestMethod https://get.activated.win | Invoke-Expression
 }
 
 function Test-OfficeInstalled {
